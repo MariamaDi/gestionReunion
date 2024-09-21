@@ -1,6 +1,6 @@
 use actix_web::{web, HttpResponse, Responder};
 use uuid::Uuid;
-
+//Gestion de reunions
 use crate::{models::participants::NewParticipants, services::participants_service, AppState};
 pub async fn create_participants(
     state: web::Data<AppState>,
